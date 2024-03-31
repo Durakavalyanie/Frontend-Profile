@@ -8,6 +8,10 @@
   margin: auto;
 }
 
+.image {
+  alt: "tilt";
+}
+
 .margin_0 {
   margin: 0;
 }
@@ -47,7 +51,7 @@
   width: 45%;
 }
 
-.image {
+.card_image {
   width:100%;
   margin: auto;
 }
