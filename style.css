@@ -1,0 +1,97 @@
+.page {
+  font-family: Courier New, monospace;
+  color: white;
+  background-color: black;
+}
+
+.centered-block {
+  margin: auto;
+}
+
+.margin_0 {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  height: 20vh;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-title {
+  padding: 5%;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 500px;
+  width: 45%;
+}
+
+.general-skills {
+  flex-basis: 50vh;
+}
+
+.interests {
+  flex-basis: 50vh;
+}
+
+.image {
+  width:100%;
+  margin: auto;
+}
+
+.logo {
+  height: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.footer {
+  height: 4vh;
+}
+
+.warrior {
+  align-self: center;
+  min-width: 90px;
+  width: 20%;
+  margin: 0 2%;
+}
+
+.hard-skill {
+  min-width: 300px;
+  flex-grow: 1;
+  flex-basis: 50%;
+  flex-wrap: nowrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.skill_text {
+  max-width: 70%;
+}
