@@ -8,17 +8,23 @@
   margin: auto;
 }
 
-.margin_0 {
-  margin: 0;
-}
-
 .header {
   display: flex;
   height: 20vh;
 }
 
-.space-evenly {
-  justify-content: space-evenly;
+.header__text {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter {
+  display: flex;
+  flex-direction: column;
 }
 
 .list {
@@ -27,29 +33,33 @@
   padding: 0;
 }
 
-.flex-row {
+.hard-skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.content-title {
+.chapter__title {
   padding: 5%;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   min-width: 300px;
   max-width: 500px;
   width: 45%;
 }
 
-.card_image {
+.card__image {
   width:100%;
   margin: auto;
+}
+
+.cards-pool {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .logo {
@@ -62,24 +72,25 @@
   height: 3vh;
 }
 
-.warrior {
+.skill__image {
   align-self: center;
   min-width: 90px;
   width: 20%;
   margin: 0 2%;
 }
 
-.hard-skill {
+.skill {
   min-width: 300px;
   flex-grow: 1;
   flex-basis: 50%;
   flex-wrap: nowrap;
-}
-
-.space-between {
   justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.skill_text {
+.skill__text {
+  display: flex;
+  flex-direction: column;
   max-width: 70%;
 }
