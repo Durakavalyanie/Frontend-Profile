@@ -17,6 +17,11 @@
   margin: 0;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 .chapter {
   display: flex;
   flex-direction: column;
@@ -88,4 +93,8 @@
   display: flex;
   flex-direction: column;
   max-width: 70%;
+}
+
+.link {
+  text-decoration: none;
 }
