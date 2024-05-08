@@ -309,6 +309,10 @@
   justify-content: space-between;
   padding: 1%;
 }
+
+.countdown__title {
+  font-size: 2vh;
+}
  
 .countdown__item {
   margin: 0;
@@ -317,10 +321,10 @@
 }
  
 .countdown__number {
-  font-size: 2em;
+  font-size: 2vh;
 }
  
 .label {
-  font-size: 2em;
+  font-size: 2vh;
   color: #999;
 }
