@@ -14,9 +14,27 @@
   <body class = "page">
 
     <header class = "header">
-      <div class = "centered-block">
-        <h1 class = "header__text">Отливанчик Павел</h1>
-        <h2 class = "header__text">Студент 1 курса ВШПИ, МФТИ</h2>
+
+      <script async src="https://unpkg.com/es-module-shims@1.8.3/dist/es-module-shims.js"></script>
+      <script type="importmap">
+        {
+          "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.86/build/runtime.js"
+          }
+        }
+      </script>
+      <script type="module">
+        import { Application } from '@splinetool/runtime';
+        const canvas = document.getElementById('canvas3d');
+        const app = new Application(canvas);
+        app.load('https://prod.spline.design/ir3Bl6i9oWFnhIPL/scene.splinecode');
+      </script>
+      <div id = "container">
+       <canvas id="canvas3d"></canvas>
+      </div> 
+      <div class = "header__title">
+        <h1 class = "header__title__text">Отливанчик Павел</h1>
+        <h2 class = "header__title__text">Студент 1 курса ВШПИ, МФТИ</h2>
       </div>
     </header>
 
@@ -98,7 +116,27 @@
           </li>
         </ul>
       </section>
+      <div class="countdown">
+        <h2>До лета осталось</h2>
+        <div class="countdown__item">
+          <span class = "countdown__number" id="days">00</span>
+          <span class="label">Дней</span>
+        </div>
+        <div class="countdown__item">
+          <span class = "countdown__number" id="hours">00</span>
+          <span class="label">Часов</span>
+        </div>
+        <div class="countdown__item">
+          <span class = "countdown__number" id="minutes">00</span>
+          <span class="label">Минут</span>
+        </div>
+        <div class="countdown__item">
+          <span class = "countdown__number" id="seconds">00</span>
+          <span class="label">Секунд</span>
+        </div>
+      </div>
     </main>
+    
     <footer class = "footer">
       <a href = "https://t.me/Jdjdhhdbd" class = "link"><img class = "logo" src = "images/tg_logo.png" alt = "telegram icon"></a>
       <a href = "https://vk.com/id375097487" class = "link">
@@ -108,5 +146,40 @@
       </a>
       <a href = "https://github.com/Durakavalyanie" class = "link"><img class = "logo" src = "images/github_logo.jpeg" alt = "github icon"></a>
     </footer> 
+
+
+    <div class="popup popup_reminder">
+      <div class="popup__container popup__container_opened popup__container_reminder">
+          <button class="popup__container__close-button" type="button" aria-label="Close"></button>
+          <h2 class="popup__container__title popup__container__title_reminder">Are you still here?</h2>
+      </div>
+    </div>
+
+
+    <div class="popup popup_gallery">
+        <button class="popup__close-button" type="button" aria-label="Close"></button>
+        <button class="popup__prev-button" type="button" aria-label="Previous image"></button>
+        <img class="popup__image popup__image_opened" src="images/rick.jpg" alt="Gallery image">
+        <button class="popup__next-button" type="button" aria-label="Next image"></button>
+    </div>
+
+    <button class = "contact-button" type="button" aria-label="Contact">Связаться</button>
+
+    <div class="popup popup_contact-form">
+      <button class="popup__close-button" type="button" aria-label="Close"></button>
+      <div class="popup__container popup__container_opened popup__container_contact-form">
+        <h2 class = "popup__container__title popup__container__title_contact-form">Форма связи</h2>
+        <form class = "contact-form">
+          <input type="email" name="email" class="contact-form__input contact-form__input_email" placeholder="Email" required="Required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
+          <p class="contact-form__error-message contact-form__error-message_email contact-form__error-message_disabled">Are u shure it's a valid e-mail</p>
+          <input type="text" name="name" class="contact-form__input contact-form__input_name" placeholder="Name" required="Required" pattern="[a-zA-Z]{1,100}">
+          <p class="contact-form__error-message contact-form__error-message_name contact-form__error-message_disabled">Smth defenetly wrong with your name</p>
+          <input type="text" name="message" class="contact-form__input contact-form__input_request-text" placeholder="Message">
+          <button class="contact-form__send-button contact-form__send-button_disabled" type="button" aria-label="Send">Send</button>
+        </form>
+      </div>  
+    </div>
+
+    <script src = "scripts.js"></script>
   </body>
 </html>
