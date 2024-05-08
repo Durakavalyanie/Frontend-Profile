@@ -304,27 +304,39 @@
   border-bottom: 1px solid red;
 }
 
+.countdown-container {
+  padding: 1%;
+  display: flex;
+  height: 6vh;
+}
+
 .countdown {
   display: flex;
-  justify-content: space-between;
-  padding: 1%;
+  width: 100%;
 }
 
 .countdown__title {
-  font-size: 2vh;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
 }
  
 .countdown__item {
   margin: 0;
   padding: 0;
   align-self: center;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
  
 .countdown__number {
-  font-size: 2vh;
+  margin: 0 8px;
 }
  
-.label {
-  font-size: 2vh;
+.countdown__label {
   color: #999;
 }
