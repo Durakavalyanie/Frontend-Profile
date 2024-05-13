@@ -19,7 +19,7 @@ popupReminderCloseButton.addEventListener("click", function(event) {
 })
 
 if (sessionStorage.getItem('reminderWasClosed') !== 'Y') {
-  setTimeout(popupReminderOpen, 30000);
+  setTimeout(popupReminderOpen, 1000);
 }
 
 
