@@ -172,7 +172,7 @@
       <div class="popup__container popup__container_opened popup__container_contact-form">
         <h2 class = "popup__container__title popup__container__title_contact-form">Форма связи</h2>
         <form class = "contact-form">
-          <input type="email" name="email" class="contact-form__input contact-form__input_email" placeholder="Email" required="Required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
+          <input type="email" name="email" class="contact-form__input contact-form__input_email" placeholder="Email" required="Required" pattern="[a-z0-9_]{2,}@[a-z0-9]{2,}(\.[a-z]{2,})+">
           <p class="contact-form__error-message contact-form__error-message_email contact-form__error-message_disabled">Are u shure it's a valid e-mail</p>
           <input type="text" name="name" class="contact-form__input contact-form__input_name" placeholder="Name" required="Required" pattern="[a-zA-Z]{1,100}">
           <p class="contact-form__error-message contact-form__error-message_name contact-form__error-message_disabled">Smth defenetly wrong with your name</p>
