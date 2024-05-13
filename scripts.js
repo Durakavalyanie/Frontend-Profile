@@ -8,10 +8,9 @@ function popupReminderOpen() {
 }
 
 function popupReminderClose() {
-  localStorage.setItem('reminderWasClosed', 'Y')
+  sessionStorage.setItem('reminderWasClosed', 'Y')
   popupReminderElement.classList.remove("popup_opened");
   popupReminderContainer.classList.remove("popup__container_opened");
-
 }
 
 popupReminderCloseButton.addEventListener("click", function(event) {
@@ -19,8 +18,8 @@ popupReminderCloseButton.addEventListener("click", function(event) {
   event.stopPropagation();
 })
 
-if (localStorage.getItem('reminderWasClosed') !== 'Y') {
-  setTimeout(popupReminderOpen, 200);
+if (sessionStorage.getItem('reminderWasClosed') !== 'Y') {
+  setTimeout(popupReminderOpen, 30000);
 }
 
 
