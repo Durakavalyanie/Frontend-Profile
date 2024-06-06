@@ -19,7 +19,7 @@ popupReminderCloseButton.addEventListener("click", function(event) {
 })
 
 if (sessionStorage.getItem('reminderWasClosed') !== 'Y') {
-  setTimeout(popupReminderOpen, 1000);
+  setTimeout(popupReminderOpen, 30000);
 }
 
 
@@ -255,7 +255,7 @@ formSendButton.addEventListener('click', function (event) {
 //COUNTDOWN
 
 const countdown = document.querySelector('.countdown');
-const targetDate = new Date('2024-06-01T00:00:00');
+const targetDate = new Date('2024-09-01T00:00:00');
  
 function updateCountdown() {
   const now = new Date();
