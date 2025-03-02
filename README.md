@@ -1,2 +1,4 @@
 # Frontend-Profile
-Задание по фронтенду
+Задание по курсу фронтенда МФТИ.
+
+[Cайт](https://durakavalyanie.github.io/Frontend-Profile)
